@@ -27,7 +27,7 @@ JOIN Orders o
 	ON e.EmployeeID = o.EmployeeID
 GROUP BY LastName
 ORDER BY COUNT(OrderID) DESC;
--- We can add a LIMIT 1 clause if we want at the end to return just the one record
+-- We can add a 'LIMIT 1' clause just before the ';' if we wish to return just the one record
 
 
 
@@ -60,6 +60,8 @@ JOIN Customers c
 WHERE c.Country = 'Germany'
 GROUP BY p.ProductID
 ORDER BY  1 DESC;
+-- We can add a 'LIMIT 1' clause just before the ';' if we wish to return just the one record
+
 
 /*
 ===============================================================================
@@ -80,3 +82,4 @@ JOIN Customers c
 WHERE c.Country = 'Germany'
 GROUP BY p.ProductID
 ORDER BY  1 DESC;
+-- We can add a 'LIMIT 1' clause just before the ';' if we wish to return just the one record
