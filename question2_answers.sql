@@ -33,8 +33,6 @@ ORDER BY COUNT(OrderID) DESC;
        This question is a little ambiguous and could mean one of two things:
        1. Which product appeared in most orders
        2. Which product was ordered the most by quantity
-       
-       A less ambiguous phrasing I could think of would be 'What product was ordered by most customers in Germany?'
 
        I will answer both questions, and in practice, I would ask for a clarification from the requesting team
               
