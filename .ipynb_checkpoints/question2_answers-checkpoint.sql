@@ -1,7 +1,9 @@
 /*
+=================================================================
     a. How many orders were shipped by Speedy Express in total?
        
        54 orders were shipped by Speedy Express
+=================================================================
 */
 
 SELECT COUNT(*)
@@ -12,9 +14,11 @@ WHERE s.ShipperName = 'Speedy Express';
 
 
 /*
+====================================================================================
     b. What is the last name of the employee with the most orders?
     
        Peacock is the last name of the employee with the most orders at 40 orders.
+====================================================================================
 */
 
 SELECT LastName, COUNT(OrderID)
@@ -28,6 +32,7 @@ ORDER BY COUNT(OrderID) DESC;
 
 
 /*
+====================================================================================================================
     c. What product was ordered the most by customers in Germany?
     
        This question is a little ambiguous and could mean one of two things:
@@ -35,11 +40,14 @@ ORDER BY COUNT(OrderID) DESC;
        2. Which product was ordered the most by quantity
 
        I will answer both questions, and in practice, I would ask for a clarification from the requesting team
-              
+
+--------------------------------------------------------------------------------------------------------------------
        
     c.(1) Which product appeared in the most orders by German customers?
           
           Gorgonzola Telino was ordered the most at 5 unique orders in Germany
+====================================================================================================================
+
 */
 
 SELECT COUNT(od.Quantity) AS UniqueOrders, p.ProductName
@@ -55,9 +63,11 @@ GROUP BY p.ProductID
 ORDER BY  1 DESC;
 
 /*
+===============================================================================
     c.(2) Which product sold the most quantity in Germany?
     
         Boston Crab Meat sold the most at 160 total quantity sold in Germany
+===============================================================================        
 */
 
 SELECT SUM(od.Quantity) AS TotalQuantity, p.ProductName
