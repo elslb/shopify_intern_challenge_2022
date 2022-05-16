@@ -42,5 +42,5 @@
     presented as a given in the question. Instead, the weighted AOV provides us with a more accurate picture of what we can expect
     from the stores in this dataset, with the exception of the 2 outliers.
 
-   ##### Meadian of order amounts = $284
+   ##### Median of order amounts = $284
     The value of this metric lies in its robustness to outliers and helping us understand where the "middle" of our data is.
