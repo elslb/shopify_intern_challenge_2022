@@ -2,7 +2,7 @@
 =================================================================
     a. How many orders were shipped by Speedy Express in total?
        
-       54 orders were shipped by Speedy Express
+ANSWER: 54 orders were shipped by Speedy Express
 =================================================================
 */
 
@@ -17,7 +17,7 @@ WHERE s.ShipperName = 'Speedy Express';
 ====================================================================================
     b. What is the last name of the employee with the most orders?
     
-       Peacock is the last name of the employee with the most orders at 40 orders.
+ANSWER: Peacock is the last name of the employee with the most orders at 40 orders.
 ====================================================================================
 */
 
@@ -45,7 +45,7 @@ ORDER BY COUNT(OrderID) DESC;
        
     c.(1) Which product appeared in the most orders by German customers?
           
-          Gorgonzola Telino was ordered the most at 5 unique orders in Germany
+ANSWER:  Gorgonzola Telino was ordered the most at 5 unique orders in Germany
 ====================================================================================================================
 */
 
@@ -65,7 +65,7 @@ ORDER BY  1 DESC;
 ===============================================================================
     c.(2) Which product sold the most quantity in Germany?
     
-        Boston Crab Meat sold the most at 160 total quantity sold in Germany
+ANSWER:  Boston Crab Meat sold the most at 160 total quantity sold in Germany
 ===============================================================================        
 */
 
