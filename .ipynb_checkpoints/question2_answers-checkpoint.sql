@@ -47,7 +47,6 @@ ORDER BY COUNT(OrderID) DESC;
           
           Gorgonzola Telino was ordered the most at 5 unique orders in Germany
 ====================================================================================================================
-
 */
 
 SELECT COUNT(od.Quantity) AS UniqueOrders, p.ProductName
